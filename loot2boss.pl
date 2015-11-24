@@ -1,3 +1,5 @@
+#!/usr/bin/env perl
+
 use strict;
 use warnings;
 use YAML::XS;
@@ -62,3 +64,49 @@ if ($opt_exec ne "") {
   print "Starting \"".$opt_exec."\"...\n";
   system($opt_exec);
 }
+
+__END__
+
+=head1 NAME
+
+LOOT to BOSS file format converter.
+
+=head1 SYNOPSIS
+
+loot2boss [options]
+
+=head1 OPTIONS
+
+=over 8
+
+=item B<-loot>
+
+LOOT masterlist input file in YAML format.
+
+=item B<-boss>
+
+BOSS masterlist output file in text format. If not specified then output will
+be printed to console.
+
+=item B<-exec>
+
+Program to execute after conversion. Does nothing if not specified.
+
+=item B<-help>
+
+Print a brief help message and exits.
+
+=item B<-man>
+
+Prints the manual page and exits.
+
+=back
+
+=head1 DESCRIPTION
+
+This program will read the given input file in YAML format, which is expected
+to be a LOOT generated masterfile, extract BASHed tags for all listed plugins 
+and covert it into BOSS proprietary text file format, that is accaptable by
+older version of Wrye Bash utility or its forked version like Wrye Flash.
+
+=cut
