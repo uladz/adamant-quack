@@ -41,7 +41,7 @@ my $ul = YAML::XS::LoadFile($opt_loot_file);
 
 ## Load and merge in second LOOT file.
 my $ul2 = ();
-my $replaced_cnt = 0;
+my $merged_cnt = 0;
 if ($opt_loot_file2 ne "") {
   print "Merging in \"".$opt_loot_file2."\"...\n";
   $ul2 = YAML::XS::LoadFile($opt_loot_file2);
@@ -49,16 +49,24 @@ if ($opt_loot_file2 ne "") {
     my $name2 = $_->{name};
     my $tags2 = $_->{tag};
     next unless defined $tags2;
+    my $merged = 0;
     for (@{$ul->{plugins}}) {
       my $name = $_->{name};
+      my $tags = $_->{tag};
       if ($name eq $name2) {
         if ($file ne "") {
           print "  + user tags \"".$name."\"\n";
         }
-        $_->{tag} = ();
-        $replaced_cnt++;
+        my %seen;
+        my @merged_tags = grep( !$seen{$_}++, @{$tags}, @{$tags2});
+        @{$_->{tag}} = @merged_tags;
+        $merged = 1;
         last;
       }
+    }
+    if ($merged) {
+      $merged_cnt++;
+      $_->{tag} = undef;
     }
   }
 }
@@ -104,7 +112,7 @@ if ($file ne "") {
   print "Output \"".$file."\":\n";
   print "  written ".$output_cnt." record(s)\n";
   print "  ignored ".$ignored_cnt." record(s)\n";
-  print "  replaced ".$replaced_cnt." record(s)\n";
+  print "  merged ".$merged_cnt." record(s)\n";
 }
 
 ## Run external command after conversion.
@@ -112,7 +120,8 @@ if ($opt_exec ne "") {
   if ($file ne "") {
     print "Starting \"".$opt_exec."\"...\n";
   }
-  system($opt_exec);
+  #system("cmd", qq($opt_exec));
+  system('start "" "' . $opt_exec . '"');
 }
 if ($file ne "") {
   print "Done.\n"
