@@ -1,0 +1,374 @@
+	<rect name="AccuracyCircle">
+		<id> &noglow_branch; </id>
+		<systemcolor> <copy src="ReticleCenter" trait="systemcolor" /> </systemcolor>
+		<width>
+			<mul src="globals()" trait="_duiscale" />
+			<copy> 600 </copy>
+		</width>
+		<height>
+			<copy> 600 </copy>
+			<mul src="globals()" trait="_duiscale" />
+		</height>
+		<Active>0</Active>
+		<visible>
+			<copy src="ReticleCenter" trait="visible" />
+			<and src="me()" trait="Active" />
+		</visible>
+		<image name="accuracy_circle_25">
+			<zoom> &scale; </zoom>
+			<visible>&false;</visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_25.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+		<image name="accuracy_circle_50">
+			<zoom> &scale; </zoom>
+			<visible>&false;</visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_50.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+		<image name="accuracy_circle_100">
+			<zoom> &scale; </zoom>
+			<visible> &false; </visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_100.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+		<image name="accuracy_circle_150">
+			<zoom> &scale; </zoom>
+			<visible> &false; </visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_150.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+		<image name="accuracy_circle_200">
+			<zoom> &scale; </zoom>
+			<visible> &false; </visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_200.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+		<image name="accuracy_circle_250">
+			<zoom> &scale; </zoom>
+			<visible> &false; </visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_250.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+		<image name="accuracy_circle_300">
+			<zoom> &scale; </zoom>
+			<visible> &false; </visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_300.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+		<image name="accuracy_circle_350">
+			<zoom> &scale; </zoom>
+			<visible> &false; </visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_350.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+		<image name="accuracy_circle_400">
+			<zoom> &scale; </zoom>
+			<visible> &false; </visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_400.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+		<image name="accuracy_circle_450">
+			<zoom> &scale; </zoom>
+			<visible> &false; </visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_450.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+		<image name="accuracy_circle_500">
+			<zoom> &scale; </zoom>
+			<visible> &false; </visible>
+			<alpha>255</alpha>
+			<filename> Interface\accuracy_circle_500.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>100</width>
+			<height>100</height>
+			<x>
+				<copy src="screen()" trait="width"/>
+				<sub src="me()" trait="width"/>
+				<div> 2 </div>
+				<sub> 1 </sub>
+			</x>
+			<y>
+				<copy src="screen()" trait="height"/>
+				<sub src="me()" trait="height"/>
+				<div> 2 </div>
+				<add> 1 </add>
+			</y>
+		</image>
+	</rect>
+	
+	<rect name="AccuracyCross">
+		<id> &noglow_branch; </id>
+		<systemcolor> <copy src="ReticleCenter" trait="systemcolor" /> </systemcolor>
+		<width>
+			<mul src="globals()" trait="_duiscale" />
+			<copy> 600 </copy>
+		</width>
+		<height>
+			<copy> 600 </copy>
+			<mul src="globals()" trait="_duiscale" />
+		</height>
+		<Active>0</Active>
+		<visible>
+			<copy src="ReticleCenter" trait="visible" />
+			<and src="me()" trait="Active" />
+		</visible>
+		<image name="accuracy_cross_top">
+			<zoom> &scale; </zoom>
+			<visible>&true;</visible>
+			<alpha>255</alpha>
+			<filename> Interface\cross_vert.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>1</width>
+			<height>15</height>
+			<x>
+				<copy> 0 </copy>
+				<add>
+					<copy src="screen()" trait="width"/>
+					<sub src="me()" trait="width"/>
+					<div> 2 </div>
+				  <sub> 1 </sub>
+				</add>
+			</x>
+			<y>
+				<copy> 0 </copy>
+				<add>
+					<copy src="screen()" trait="height"/>
+					<sub src="me()" trait="height"/>
+					<div> 2 </div>
+				  <add> 1 </add>
+				</add>
+			</y>
+		</image>
+		<image name="accuracy_cross_bottom">
+			<zoom> &scale; </zoom>
+			<visible>&true;</visible>
+			<alpha>255</alpha>
+			<filename> Interface\cross_vert.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>1</width>
+			<height>15</height>
+			<x>
+				<copy> 0 </copy>
+				<add>
+					<copy src="screen()" trait="width"/>
+					<sub src="me()" trait="width"/>
+					<div> 2 </div>
+				  <sub> 1 </sub>
+				</add>
+			</x>
+			<y>
+				<copy> 0 </copy>
+				<add>
+					<copy src="screen()" trait="height"/>
+					<sub src="me()" trait="height"/>
+					<div> 2 </div>
+				  <add> 1 </add>
+				</add>
+			</y>
+		</image>
+		<image name="accuracy_cross_left">
+			<zoom> &scale; </zoom>
+			<visible>&true;</visible>
+			<alpha>255</alpha>
+			<filename> Interface\cross_horiz.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>15</width>
+			<height>1</height>
+			<x>
+				<copy> 0 </copy>
+				<add>
+					<copy src="screen()" trait="width"/>
+					<sub src="me()" trait="width"/>
+					<div> 2 </div>
+				  <sub> 1 </sub>
+				</add>
+			</x>
+			<y>
+				<copy> 0 </copy>
+				<add>
+					<copy src="screen()" trait="height"/>
+					<sub src="me()" trait="height"/>
+					<div> 2 </div>
+				  <add> 1 </add>
+				</add>
+			</y>
+		</image>
+		<image name="accuracy_cross_right">
+			<zoom> &scale; </zoom>
+			<visible>&true;</visible>
+			<alpha>255</alpha>
+			<filename> Interface\cross_horiz.dds </filename>
+			<texatlas> Interface\InterfaceShared.tai </texatlas>
+			<width>15</width>
+			<height>1</height>
+			<x>
+				<copy> 0 </copy>
+				<add>
+					<copy src="screen()" trait="width"/>
+					<sub src="me()" trait="width"/>
+					<div> 2 </div>
+				  <sub> 1 </sub>
+				</add>
+			</x>
+			<y>
+				<copy> 0 </copy>
+				<add>
+					<copy src="screen()" trait="height"/>
+					<sub src="me()" trait="height"/>
+					<div> 2 </div>
+				  <add> 1 </add>
+				</add>
+			</y>
+		</image>
+	</rect>
